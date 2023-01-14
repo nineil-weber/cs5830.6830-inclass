@@ -38,11 +38,6 @@ def filters_slide16():
     cv2.imshow('Image + noise', im_noise)
     cv2.waitKey(0)
 
-    # Remove filter
-    clean_im = ndimage.median_filter(im, 5)
-    cv2.imshow('Image + noise', im_noise)
-    cv2.waitKey(0)
-
 def fspecial_gauss(size, sigma):
     # https: // stackoverflow.com / questions / 17190649 / how - to - obtain - a - gaussian - filter - in -python
     """Function to mimic the 'fspecial' gaussian MATLAB function
