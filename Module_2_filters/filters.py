@@ -61,7 +61,6 @@ def filters_slide26():
     plt.show()
 
     filt_im = ndimage.convolve(im, filter, mode='constant')
-    pdb.set_trace()
 
     cv2.imshow('image', im)  # Display the image
     cv2.waitKey(0)
@@ -92,6 +91,6 @@ def examples():
 
 
 # main
-filters_slide16()
+# filters_slide16()
 # filters_slide26()
-# examples()
+examples()
