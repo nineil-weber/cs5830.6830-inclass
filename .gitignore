@@ -1,3 +1,6 @@
 .idea/
 .DS_Store
 hws/
+Module_3_features/sample/
+Module_3_features/*.m
+*.pyc
