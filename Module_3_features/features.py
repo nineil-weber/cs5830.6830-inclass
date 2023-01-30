@@ -21,7 +21,7 @@ def ind2sub(array_shape, ind):
 
     return (rows, cols)
 
-def blobs():
+def blobs(): # Features - Slide 56
     # blobs: blob detection using Laplacian pyramid
     im = cv2.imread('butterfly3.png')
     orig_im = im
@@ -29,7 +29,7 @@ def blobs():
         im = cv2.cvtColor(im, cv2.COLOR_BGR2GRAY)
     im = im.astype(np.float32)  # to float32
 
-    sigma = 2 #
+    sigma = 2
 
     # plt.figure()
     # plt.imshow(im, cmap=plt.get_cmap('gray'))
@@ -78,7 +78,7 @@ def blobs():
         plt.plot(keypoints[i][1], keypoints[i][0], marker="o", markersize=rad, markeredgecolor="red", markerfacecolor="green")
     plt.show()
 
-def autocorr_surface(r, c):
+def harris_detector_slide25(r, c): # Feaures - Slide 25
     ones_mat = np.ones((5, 15))
     ones_mat2 = np.ones((10, 6))
     zeros_mat = np.zeros((10, 9))
@@ -122,8 +122,9 @@ def autocorr_surface(r, c):
     plt.show()
 
 # Main Function
-autocorr_surface(4, 4)
-# autocorr_surface(7, 7)
-# autocorr_surface(10, 10)
 
-# blobs() # blobs
+# harris_detector_slide25(4, 4)
+# # harris_detector_slide25(7, 7)
+# # harris_detector_slide25(10, 10)
+
+blobs() # blobs
